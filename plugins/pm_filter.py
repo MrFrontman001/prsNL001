@@ -602,16 +602,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton("+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +", url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+            InlineKeyboardButton("Bot Updates 🌿", url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('ℹ️ ᴜᴘᴅᴀᴛᴇs', url=UPDATES_LINK),
-            InlineKeyboardButton('🧑‍💻 ꜱᴜᴘᴘᴏʀᴛ', url=SUPPORT_LINK)
+            InlineKeyboardButton('⚠️ ᴅᴍᴄᴀ', callback_data='dmca'),
+            InlineKeyboardButton('📒 ʀᴜʟᴇꜱ', callback_data='rules')
         ],[
-            InlineKeyboardButton('👨‍🚒 ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('🔎 ɪɴʟɪɴᴇ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data='about')
-        ],[
-            InlineKeyboardButton('🤑 Buy Premium', url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton('🎀 ᴘʀᴏᴍᴏᴛᴇ', callback_data='promote'),
+            InlineKeyboardButton('ꜱᴇᴀʀᴄʜ 🔍', switch_inline_query_current_chat='')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.edit_message_media(
@@ -659,24 +656,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(buttons)
         )
     
-    elif query.data == "owner":
-        buttons = [[InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='about')]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.edit_message_media(
-            InputMediaPhoto(random.choice(PICS), caption=script.MY_OWNER_TXT),
-            reply_markup=reply_markup
-        )
-        
-    elif query.data == "help":
+    elif query.data == "promote":
         buttons = [[
-            InlineKeyboardButton('User Command', callback_data='user_command'),
-            InlineKeyboardButton('Admin Command', callback_data='admin_command')
-        ],[
-            InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('🗽 Promote', url='https://t.me/DevThanos'),
+            InlineKeyboardButton('◀️ Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.edit_message_media(
-            InputMediaPhoto(random.choice(PICS), caption=script.HELP_TXT.format(query.from_user.mention)),
+            InputMediaPhoto(random.choice(PICS), caption=script.PROMOTE_TXT),
+            reply_markup=reply_markup
+        )
+        
+    elif query.data == "rules":
+        buttons = [[
+            InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ ❥', callback_data='admin_command')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.edit_message_media(
+            InputMediaPhoto(random.choice(PICS), caption=script.RULES_TXT.format(query.from_user.mention)),
             reply_markup=reply_markup
         )
 
@@ -702,13 +700,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup
         )
 
-    elif query.data == "source":
+    elif query.data == "dmca":
         buttons = [[
-            InlineKeyboardButton('≼ ʙᴀᴄᴋ', callback_data='about')
+            InlineKeyboardButton('👾 Contact', url='https://t.me/DevThanos'),
+            InlineKeyboardButton('◀️ Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.edit_message_media(
-            InputMediaPhoto(random.choice(PICS), caption=script.SOURCE_TXT),
+            InputMediaPhoto(random.choice(PICS), caption=script.DMCA_TXT),
             reply_markup=reply_markup
         )
   
