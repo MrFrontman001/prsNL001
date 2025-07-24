@@ -9,9 +9,7 @@ class script(object):
 ★ Language: <a href=https://www.python.org>Python</a>
 ★ Library: <a href=https://t.me/HydrogramNews>Hydrogram</a>"""
 
-    MY_OWNER_TXT = """★ Name: HA Bots
-★ Username: @HA_Bots
-★ Country: Sri Lanka 🇱🇰"""
+    PROMOTE_TXT = """Reach more audience by promoting your channel, group or bot here. Contact ADMIN for more details."""
 
     STATUS_TXT = """👤 Total Users: <code>{}</code>
 😎 Premium Users: <code>{}</code>
@@ -62,12 +60,22 @@ I can't find the <b>{}</b> in my database! 🥲
 
     WELCOME_TEXT = """👋 Hello {mention}, Welcome to {title} group! 💞"""
 
-    HELP_TXT = """👋 Hello {},
+    RULES_TXT = """<blockquote><b>🌐 Movies/Series Search Rules 🔍</blockquote>
     
-I can filter movie and series you want
-Just type you want movie or series in my PM or adding me in to group
-And i have more feature for you
-Just try my commands"""
+    ➜ ᴀʟᴡᴀʏꜱ ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇꜱ/ꜱᴇʀɪᴇꜱ ɪɴ ᴇɴɢʟɪꜱʜ. ᴅᴏɴ'ᴛ ᴜꜱᴇ ᴏᴛʜᴇʀꜱ ʟᴀɴɢᴜᴀɢᴇ.
+
+◉ ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇꜱ ʟɪᴋᴇ ᴛʜɪꜱ :- 
+› ꜱᴀʟᴀᴀʀ 2023 ✔️ 
+› ꜱᴀʟᴀᴀʀ ʜɪɴᴅɪ ✔️ 
+› ꜱᴀʟᴀᴀʀ ꜱᴏᴜᴛʜ ᴍᴏᴠɪᴇ ❌ 
+› ꜱᴀʟᴀᴀʀ ʜɪɴᴅɪ ᴅᴜʙʙᴇᴅ ❌ 
+
+◉ ꜱᴇᴀʀᴄʜ ꜱᴇʀɪᴇꜱ ʟɪᴋᴇ ᴛʜɪꜱ :- 
+› ᴠɪᴋɪɴɢꜱ ✔️ 
+› ᴠɪᴋɪɴɢꜱ ꜱ01 ✔️ 
+› ᴠɪᴋɪɴɢꜱ ꜱᴇᴀꜱᴏɴ 1 ❌ 
+› ᴠɪᴋɪɴɢꜱ ᴡᴇʙ ꜱᴇʀɪᴇꜱ ❌ 
+<blockquote>➜ ɪғ ᴍᴏᴠɪᴇ/ꜱᴇʀɪᴇꜱ ɴᴏᴛ ғᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ ꜱᴇɴᴅ ɴᴀᴍᴇ ɪɴ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ.</blockquote></b>"""
 
     ADMIN_COMMAND_TXT = """<b>Here is bot admin commands 👇
 
@@ -119,11 +127,9 @@ Support: {}"""
 /connect - to connect group settings to PM
 /id - to check group or channel id</b>"""
     
-    SOURCE_TXT = """<b>ʙᴏᴛ ɢɪᴛʜᴜʙ ʀᴇᴘᴏsɪᴛᴏʀʏ -
+    DMCA_TXT = """<b>ᴛʜɪꜱ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 
-- ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
-
-- ꜱᴏᴜʀᴄᴇ - <a href=https://github.com/HA-Bots/Auto-Filter-Bot>ʜᴇʀᴇ</a>
-
-- ᴅᴇᴠʟᴏᴘᴇʀ - @HA_Bots"""
+ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ɪɴ ᴛʜɪꜱ ʙᴏᴛ ᴀʀᴇ ꜰʀᴇᴇʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛʜᴇ ɪɴᴛᴇʀɴᴇᴛ ᴏʀ ᴘᴏꜱᴛᴇᴅ ʙʏ ꜱᴏᴍᴇʙᴏᴅʏ ᴇʟꜱᴇ. ᴊᴜꜱᴛ ꜰᴏʀ ᴇᴀꜱʏ ꜱᴇᴀʀᴄʜɪɴɢ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɪɴᴅᴇxɪɴɢ ꜰɪʟᴇꜱ ᴡʜɪᴄʜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴜᴘʟᴏᴀᴅᴇᴅ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ. ᴡᴇ ʀᴇꜱᴘᴇᴄᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴘʏʀɪɢʜᴛ ʟᴀᴡꜱ ᴀɴᴅ ᴡᴏʀᴋꜱ ɪɴ ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪᴛʜ ᴅᴍᴄᴀ ᴀɴᴅ ᴇᴜᴄᴅ. ɪꜰ ᴀɴʏᴛʜɪɴɢ ɪꜱ ᴀɢᴀɪɴꜱᴛ ʟᴀᴡ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ꜱᴏ ᴛʜᴀᴛ ɪᴛ ᴄᴀɴ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ ᴀꜱᴀᴘ. ɪᴛ ɪꜱ ꜰᴏʀʙɪʙʙᴇɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ, ꜱᴛʀᴇᴀᴍ, ʀᴇᴘʀᴏᴅᴜᴄᴇ, ꜱʜᴀʀᴇ ᴏʀ ᴄᴏɴꜱᴜᴍᴇ ᴄᴏɴᴛᴇɴᴛ ᴡɪᴛʜᴏᴜᴛ ᴇxᴘʟɪᴄɪᴛ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ꜰʀᴏᴍ ᴛʜᴇ ᴄᴏɴᴛᴇɴᴛ ᴄʀᴇᴀᴛᴏʀ ᴏʀ ʟᴇɢᴀʟ ᴄᴏᴘʏʀɪɢʜᴛ ʜᴏʟᴅᴇʀ. ɪꜰ ʏᴏᴜ ʙᴇʟɪᴇᴠᴇ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴠɪᴏʟᴀᴛɪɴɢ ʏᴏᴜʀ ɪɴᴛᴇʟʟᴇᴄᴛᴜᴀʟ ᴘʀᴏᴘᴇʀᴛʏ, ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ ʀᴇꜱᴘᴇᴄᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ ꜰᴏʀ ʀᴇᴍᴏᴠᴀʟ. ᴛʜᴇ ʙᴏᴛ ᴅᴏᴇꜱ ɴᴏᴛ ᴏᴡɴ ᴀɴʏ ᴏꜰ ᴛʜᴇꜱᴇ ᴄᴏɴᴛᴇɴᴛꜱ, ɪᴛ ᴏɴʟʏ ɪɴᴅᴇx ᴛʜᴇ ꜰɪʟᴇꜱ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ.
+ɪғ ᴡᴇ ʜᴀᴠᴇ ᴠɪᴏʟᴀᴛᴇᴅ ᴀɴʏᴛʜɪɴɢ, ᴘʟᴇᴀꜱᴇ <a href=https://t.me/DevThanos>ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ</a>.
+</b>"""
 
