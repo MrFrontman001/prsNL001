@@ -35,7 +35,7 @@ async def pm_search(client, message):
         btn = [[
             InlineKeyboardButton("🗂 ᴄʟɪᴄᴋ ʜᴇʀᴇ 🗂", url=FILMS_LINK)
         ],[
-            InlineKeyboardButton('🤑 Buy Premium', url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton('Ads 🗞️', url=f"https://t.me/{temp.U_NAME}?start=show_ads")
             ]]
         reply_markup=InlineKeyboardMarkup(btn)
         if int(total) != 0:
@@ -192,7 +192,7 @@ async def next_page(bot, query):
             ]
         )
     btn.append(
-        [InlineKeyboardButton('🤑 Buy Premium', url=f"https://t.me/{temp.U_NAME}?start=premium")]
+        [InlineKeyboardButton('Ads 📰', url=f"https://t.me/{temp.U_NAME}?start=show_ads")]
     )
     await query.message.edit_text(cap + files_link + del_msg, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True, parse_mode=enums.ParseMode.HTML)
 
